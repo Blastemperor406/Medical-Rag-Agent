@@ -12,7 +12,7 @@ def load_vectorstore(path='./faiss_index'):
     return FAISS.load_local(path, HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2"), allow_dangerous_deserialization=True)
 
 def initialize_llm():
-    path = "hostllama"
+    path = "Your_Model_Path"
     return OllamaLLM(model=path, host="localhost", port=11434)
 
 def initialize_agent():
