@@ -4,7 +4,7 @@ from langchain_community.vectorstores import FAISS
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_ollama.llms import OllamaLLM
 def initialize_llm():
-    path = "hostllama"
+    path = "Your_model_path"
     return OllamaLLM(model=path, host="localhost", port=11434)
 def load_vectorstore(path='./faiss_index'):
     return FAISS.load_local(path, HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2"), allow_dangerous_deserialization=True)
