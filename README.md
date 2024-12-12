@@ -61,6 +61,11 @@ They are in this repository.
 
 The application requires a large language model (LLM) running on either LM Studio or Ollama. In this case, the project is configured to use Ollama. Ensure that the LLM is running and accessible at the specified host and port.
 
+## Product Catalogue
+
+A product catalogue document that defines the scope of the index has been attached. This document provides detailed information about the data included in the FAISS index.
+
+
 ## Usage
 
 To run the Streamlit application, execute the following command:
